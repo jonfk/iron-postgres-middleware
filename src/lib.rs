@@ -47,6 +47,10 @@ impl BeforeMiddleware for PostgresMiddleware {
         req.extensions.insert::<PostgresMiddleware>(Value(self.pool.clone()));
         Ok(())
     }
+
+    fn catch(&self, _: &mut Request, err: IronError) -> IronResult<()> {
+        Err(err)
+    }
 }
 
 /// Adds a method to requests to get a database connection.
