@@ -2,7 +2,6 @@ extern crate iron;
 
 extern crate r2d2;
 extern crate r2d2_postgres;
-extern crate postgres;
 
 use iron::prelude::*;
 use iron::{typemap, BeforeMiddleware};
