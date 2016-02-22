@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/jonfk/iron-postgres-middleware.svg?branch=master)](https://travis-ci.org/jonfk/iron-postgres-middleware)
 
+[Documentation](http://projects.jonfk.ca/iron_postgres_middleware/)
+
 An attempt to create postgres middleware for the [Iron](https://github.com/iron/iron/) web framework
 
 ## Usage
