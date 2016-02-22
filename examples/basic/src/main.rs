@@ -1,5 +1,4 @@
 extern crate iron;
-extern crate postgres;
 extern crate iron_postgres_middleware as pg_middleware;
 
 use std::error::Error;
@@ -39,7 +38,7 @@ fn name_list(req: &mut Request) -> IronResult<Response> {
 
     let mut resp_str = "Names:\n".to_string();
 
-    for row in rows {
+    for row in &rows {
         let id: i32 = row.get(0);
         let name: String = row.get(1);
         let name_format = format!("{}: {}\n", id, name);
