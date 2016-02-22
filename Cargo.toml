@@ -5,9 +5,6 @@ version = "0.0.3"
 authors = ["Martins Polakovs <martins.polakovs@gmail.com>"]
 
 [dependencies]
-iron = "*"
-r2d2_postgres = "*"
-r2d2 = "*"
-postgres = "*"
-
-log = "*"
+iron = "^0.2.6"
+r2d2 = "^0.6.3"
+r2d2_postgres = "^0.10.0"
