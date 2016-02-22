@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["PostgresMiddleware","Iron middleware that allows for postgres connections within requests."],["Value",""]],"trait":[["PostgresReqExt","Adds a method to requests to get a database connection."]]});
